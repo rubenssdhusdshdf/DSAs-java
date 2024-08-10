@@ -4,11 +4,11 @@ package ds5;
  *
  * @author Ruben
  */
-public class QNode <T> {
+public class QNode<T> {
     // Declare variables
     T elemen;
-    QNode <T> next;
-    
+    QNode<T> next;
+
     // constructors
 
     public QNode() {
@@ -22,12 +22,12 @@ public class QNode <T> {
         this.elemen = elemen;
         this.next = next;
     }
-    
+
     // Override to String
 
     @Override
     public String toString() {
         return "QNode{" + "elemen=" + elemen + ", next=" + next + '}';
     }
-    
+
 }
