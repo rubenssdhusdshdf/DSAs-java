@@ -1,18 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package tree;
 
 /**
  *
  * @author Ruben
  */
-public class BTNode <T>{
+
+public class BTNode<T> {
     protected T elem;
-    protected BTNode <T> left;
-    protected BTNode <T> right;
-    
+    protected BTNode<T> left;
+    protected BTNode<T> right;
+
     // Constructors
     public BTNode() {
     }
@@ -26,15 +23,13 @@ public class BTNode <T>{
         this.left = left;
         this.right = right;
     }
-    
+
     // toString
 
     @Override
     public String toString() {
-        String leftVal = (left == null ? "NULL" : left.elem.toString());
-        String rightVal = (right == null ? "NULL" : right.elem.toString());
+        String leftVal = (left == null ? "NULL" : left.elem.toString()); // Manually added
+        String rightVal = (right == null ? "NULL" : right.elem.toString()); // Manually added
         return "BTNode{" + "elem=" + elem + ", left=" + leftVal + ", right=" + rightVal + '}';
     }
-    
-    
 }
