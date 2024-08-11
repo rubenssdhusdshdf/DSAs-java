@@ -24,6 +24,6 @@ public interface BinaryTree <T extends Comparable<T>>{
     
     public boolean contains(T elem);
     
-    //public boolean remove(T elem);
+    public boolean remove(T elem);
 }
 

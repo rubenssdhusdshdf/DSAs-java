@@ -152,5 +152,43 @@ public class BinarySearchTreeApp {
         System.out.println("myBST1.size: " + myBST1.size());
         System.out.println("myBST1::root: " + myBST1.getRoot());    
         
-    }
+        
+        System.out.println("##### remove 4 #####");
+        //                21
+        //      10                33
+        //   6       15       25      41
+        
+        System.out.println("remove(4): " + myBST1.remove(4)); //not found
+        System.out.println("isEmpty myBST1: " + myBST1.isEmpty());
+        System.out.println("myBST1.size: " + myBST1.size());
+        System.out.println("myBST1::root: " + myBST1.getRoot());
+        System.out.println("myBST1::root.L: " + myBST1.getRoot().left);
+        System.out.println("myBST1::root.L.L: " + myBST1.getRoot().left.left);
+        System.out.println("myBST1::root.L.R: " + myBST1.getRoot().left.right);
+        System.out.println("myBST1::root.R: " + myBST1.getRoot().right);
+        System.out.println("myBST1::root.R.L: " + myBST1.getRoot().right.left);
+        System.out.println("myBST1::root.R.R: " + myBST1.getRoot().right.right);
+
+        
+        System.out.println("##### remove 10 #####");
+        
+        //                21
+        //      10                33
+        //   6       15       25      41
+        
+        System.out.println("remove(10): " + myBST1.remove(10)); // I should get node 10 details
+        System.out.println("isEmpty myBST1: " + myBST1.isEmpty());
+        System.out.println("myBST1.size: " + myBST1.size());
+        System.out.println("myBST1::root: " + myBST1.getRoot());
+        System.out.println("myBST1::root.L: " + myBST1.getRoot().left);
+        System.out.println("myBST1::root.L.L: " + myBST1.getRoot().left.left);
+        System.out.println("myBST1::root.L.R: " + myBST1.getRoot().left.right);
+        System.out.println("myBST1::root.R: " + myBST1.getRoot().right);
+        System.out.println("myBST1::root.R.L: " + myBST1.getRoot().right.left);
+        System.out.println("myBST1::root.R.R: " + myBST1.getRoot().right.right);
+
+
+       
+    }    
+     
 }
